@@ -8,7 +8,7 @@ import numpy
 if __name__ == "__main__":
 
 	# our operator is a lone wolf, but needs some pseudo-graph as parent
-	op = OpGray(graph=Graph())
+	op = OpInvert(graph=Graph())
 	
 	# input is a black image 
 	img = numpy.zeros((100,100))
