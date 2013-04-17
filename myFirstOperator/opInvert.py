@@ -11,11 +11,11 @@ class OpInvert(Operator):
 
     name = "OpInvert"
 
-    # this slot is not neccessary, could be named otherwise or even multiple slots
+    # this slot will provide the image input
     inputslot = InputSlot()
 
-    # this attribute is required! 
-    output = OutputSlot()
+    # at this slot the inverted image can be queried
+    outputslot = OutputSlot()
 
     def setupOutputs(self):
         # we will pass for now

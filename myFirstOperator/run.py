@@ -24,7 +24,7 @@ if __name__ == "__main__":
     op.inputslot.setValue(img)
 	
     # requesting the output causes the operator to process the input 
-    req = op.output(start=(0,0),stop=(100,100))
+    req = op.outputslot(start=(0,0),stop=(100,100))
 
     # we need to wait until the output is ready 
     # (this blocks until calculations are complete)
