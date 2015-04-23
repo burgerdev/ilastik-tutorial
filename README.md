@@ -1,4 +1,5 @@
-lazyflow-tutorial
-=================
+ilastik-tutorial
+================
 
-My first steps in lazyflow and ilastik, hopefully they are helpful to someone.
+A tutorial for writing lazyflow operators and ilastik applets
+
