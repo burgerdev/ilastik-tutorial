@@ -99,10 +99,13 @@ the difference to querying a plain numpy array?
 """
 
 # Fill in the blank
-# output_array = _____________
+output_array = op.Output[1, 1].wait()
 
 print("Extracted element from bottom right:")
 print(output_array)
+print("Note that the output is still a 2d array")
+print("numpy slicing yields")
+print(input_array[1, 1])
 numpy.testing.assert_array_equal(output_array, 3)
 
 """
