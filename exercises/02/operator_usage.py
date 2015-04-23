@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Exercise 1 is abput lazyflow, the lazy operations framework that lays
+Exercise 2 is about lazyflow, the lazy operations framework that lays
 the foundation for all ilastik workflows. The main feature of lazyflow
 is its laziness, which can be compared to lazy evaluation in functional
 languages. In general, data is only processed if it is really needed,
