@@ -189,9 +189,6 @@ assert not op1.Output.ready()
 assert not op2.Output.ready()
 assert not op3.Output.ready()
 
-# we could also check the meta information
-assert op3.Output.meta.shape is None
-
 """
 OutputSlots are considered to be ready when all input slots of their
 operator are ready. InputSlots are considered ready when they hold a
@@ -216,10 +213,10 @@ assert op2.Input.ready()
 op3.Input.disconnect()
 
 # op3.Input is not ready because it holds no value and has no partner
-assert not op2.Input.ready()
+assert not op3.Input.ready()
 
 # op3.Output is not ready because op3.Input is not ready
-assert not op2.Output.ready()
+assert not op3.Output.ready()
 
 
 """
