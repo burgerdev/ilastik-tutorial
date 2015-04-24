@@ -116,7 +116,7 @@ Hint: see last exercise.
 
 output_slice = op.Output[0, :].wait().squeeze()
 expected_output_slice = expected_output_array[0, :]
-numpy.testing.assert_array_equal(output_array, expected_output_slice)
+numpy.testing.assert_array_equal(output_slice, expected_output_slice)
 
 """
 That was not too hard. However, we used a fair amount of existent code,
