@@ -78,7 +78,7 @@ class OpThreshold(OpArrayPiper):
         Hint: Don't overwrite the result array (result = my_new_array)
         but fill it (result[:] = my_new_array).
         """
-        # ____________________
+        result[:] = upstream_data > threshold
 
         """
         We don't have to return a value (in fact, we shouldn't), filling
@@ -113,6 +113,9 @@ numpy.testing.assert_array_equal(output_array, expected_output_array)
 Test whether requesting a slice works ... Why do we need the squeeze()?
 Hint: see last exercise.
 """
+# squeeze() is needed because output_slice is still a 2-dim array,
+# but 'expected_output_slice' is 1-dim. squeeze() removes all singleton
+# axes from the array.
 
 output_slice = op.Output[0, :].wait().squeeze()
 expected_output_slice = expected_output_array[0, :]
