@@ -30,3 +30,10 @@ git checkout master
 git stash pop
 ```
 
+License
+=======
+
+[![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+There is absolutely no iingenuity involved in coming up with these examples, so [I release them into the public domain](COPYRIGHT_WAIVER).
+
